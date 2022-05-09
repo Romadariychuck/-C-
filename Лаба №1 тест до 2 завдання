@@ -1,0 +1,25 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace LAB2Z1
+{
+    [TestClass]
+    public class UnitTest1
+    {
+        [TestMethod]
+        public void STest()
+        {
+            // Площа
+            float r = 3;
+            float h = 10;
+            Assert.AreEqual(188.39999389648438, LAB1.Program.ploshas(r, h));
+        }
+        [TestMethod]
+        public void VTest()
+        {
+            // об'єм
+            float r = 3;
+            float h = 10;
+            Assert.AreEqual(282.6000061035156, LAB1.Program.Obyem(r, h));
+        }
+    }
+}
