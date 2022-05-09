@@ -1,0 +1,37 @@
+using System;
+namespace LAB1
+{
+    public class Program
+    {
+        public static float ploshas(float r, float h)
+        {
+            float s = 2 * (float)3.14 * r * h;
+            Console.WriteLine("\n S  = " + s.ToString());
+
+            return s;
+        }
+        public static float Obyem(float r, float h)
+        {
+            float v = (float)3.14 * h * (float)Math.Pow(r, 2);
+            Console.WriteLine("\n V  = " + v.ToString());
+
+            return v;
+        }
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Введiть r");
+            string S1 = Console.ReadLine();
+            int r = int.Parse(S1);
+
+            Console.WriteLine("Введiть h");
+            string S2 = Console.ReadLine();
+            int h = int.Parse(S2);
+            ploshas(r, h);
+            Console.ReadLine();
+            Obyem(r, h);
+            Console.ReadLine();
+
+        }
+    }
+}
