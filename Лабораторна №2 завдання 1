@@ -1,0 +1,50 @@
+using System;
+namespace LAB2z1;
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Список поштових iндексiв \n\t 58000 \n\t 79007 \n\t 65125 \n\t 69061 \n\t 01001 \n\t 76000 \n\t 73009 \n\t 21000 \n\t 81600 \n\t 40000\n\t ");
+        Console.WriteLine("Введiть iндекс, щоб дiзнатись якому мiсту вiн належить...\t\n");
+        int I = int.Parse(Console.ReadLine());
+        switch (I)
+        {
+            case 58000:
+                Console.WriteLine("\n\tЧернiвцi");
+                break;
+            case 79007:
+                Console.WriteLine("\n\tЛьвiв");
+                break;
+            case 65125:
+                Console.WriteLine("\n\tОдесса");
+                break;
+            case 69061:
+                Console.WriteLine("\n\tЗапорiжжя");
+                break;
+            case 01001:
+                Console.WriteLine("\n\tКиїв");
+                break;
+            case 76000:
+                Console.WriteLine("\n\tIвано-Франкiвськ");
+                break;
+            case 73009:
+                Console.WriteLine("\n\tХерсон");
+                break;
+            case 21000:
+                Console.WriteLine("\n\tВiнниця");
+                break;
+            case 81600:
+                Console.WriteLine("\n\tМиколаїв");
+                break;
+            case 40000:
+                Console.WriteLine("\n\tСуми");
+                break;
+
+            default:
+                Console.WriteLine("\nТакого iндексу немає в таблицi :(");
+                break;
+        }
+        Console.ReadLine();
+    }
+
+}
