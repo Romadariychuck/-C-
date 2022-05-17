@@ -1,0 +1,21 @@
+using System;
+    namespace z1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Задайте рядок"); //Введення рядка
+            string textup = Console.ReadLine();
+            textup = textup.ToUpper(); //Змінення строки, переведення слова з Нижнього регістру в Верхній. 
+            Console.WriteLine("\nРядок що змiнився:"+textup); //Виведення
+            Console.WriteLine("\nЗадайте рядок");
+            string line = Console.ReadLine();
+            var splittedLine = line.Split(' '); //Встановлення роздільника у вигляді пробілу для строки
+            var largestWord = splittedLine.OrderBy(v => v.Length).Last(); //OrderBy задає сортування послідовності в порядку
+                                                                          //зростання або спадання, що допомагає знайти найбільше слово.
+            Console.WriteLine($"Найдовше слово в строцi: {largestWord}");
+            Console.ReadKey();
+        }
+    }
+}
