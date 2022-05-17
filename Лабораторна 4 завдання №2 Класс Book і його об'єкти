@@ -1,0 +1,53 @@
+using System;
+
+namespace Program
+{
+    public class Book : IComparable
+    {
+
+        private string slovo;
+        private string numst;
+        private string ksns;
+
+        public override string ToString()
+        {
+            return $"Слово:{slovo}, Номера сторiнок де це слово зустрiчається:{numst}, К-сть цих слiв на данiй сторiнцi:{ksns}";
+        }
+
+        public int CompareTo(object? obj)
+        {
+            Book other = (Book)obj;
+            return Slovo.CompareTo(other.Slovo);
+        }
+
+
+        public Book()
+        {
+        }
+
+        public Book(string slovo, string numst, string ksns)
+        {
+            Slovo = slovo;
+            Numst = numst;
+            Ksns = ksns;
+        }
+
+        public string Slovo
+        {
+            get => slovo;
+            set => slovo = value;
+        }
+
+        public string Numst
+        {
+            get => numst;
+            set => numst = value;
+        }
+
+        public string Ksns
+        {
+            get => ksns;
+            set => ksns = value;
+        }
+    }
+}
